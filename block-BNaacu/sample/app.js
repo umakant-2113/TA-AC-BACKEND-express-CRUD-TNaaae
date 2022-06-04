@@ -8,7 +8,6 @@ mongoose.connect('mongodb://127.0.0.1/sample', (err) => {
   console.log('connection true');
 });
 // intanciate 
-
 let app = express();
 
 // middleware
