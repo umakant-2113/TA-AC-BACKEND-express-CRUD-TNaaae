@@ -7,8 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-   
-    </form>
+   <h1><%= user.name%></h1>
+   <p> <%= user.email%></p>
+   <p><%= user.mobile%></p>
+   <p><%= user.age%></p>
+   <a href="/user/<%=user.id%>/edit"> Edit</a>
     
 </body>
 </html>
