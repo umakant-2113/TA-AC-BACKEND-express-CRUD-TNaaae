@@ -44,7 +44,7 @@ router.get("/:id/edit",(req,res,next)=>{
 router.post("/:id",(req,res,next)=>{
     let id=req.params.id;
     User.findByIdAndUpdate(id,req.body,(err,user)=>{
-        res.redirect("/user/data" )
+        res.redirect("/user/"+id )
     })
 })
 
