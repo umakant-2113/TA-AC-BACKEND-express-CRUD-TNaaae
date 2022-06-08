@@ -26,17 +26,25 @@ router.get("/data",(req,res,next)=>{
 router.get("/:id",(req,res,next)=>{
     let id=req.params.id;
     User.findById(id,(err,user)=>{
-        console.log(user)
-        res.render("singleuser",{user});
+        res.render("sigleuserdetails",{user});
     })
 })
 
-// update user details 
-router.post("/:id",(req,res,next)=>{
-    let userid=req.params.id;
-    User.findByIdAndUpdate(userid, req.body,(err,user)=>{
+// single  user details 
+router.get("/:id/edit",(req,res,next)=>{
+    let id=req.params.id;
+    User.findById(id, (err,user)=>{
         if(err) return next(err);
-    res.redirect("/user/data")
+    res.render("singleuser",{user});
+    })
+})
+
+// send details into single user
+
+router.post("/:id",(req,res,next)=>{
+    let id=req.params.id;
+    User.findByIdAndUpdate(id,req.body,(err,user)=>{
+        res.redirect("/user/"+id )
     })
 })
 
