@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+    <header class="alluser-header">
+       Display All User Data  
+    </header>
+    <main>
+        <% user.forEach(elm=>{%>
+<div class="box">
+    <h1><a href="/user/<%=elm.id%>"><%= elm.name%></a> </h1>
+    <h2><%= elm.lastname%>  </h2>
+    <h3> <%= elm.email%> </h3>
+    <h4><%= elm.age%></h4>
+    <h5><%= elm.mobile%></h5>
+</div>
+       <% })%>
+    </main>
+</body>
+</html>

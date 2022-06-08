@@ -1,0 +1,123 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* custome style */
+a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: .5rem;
+    /* background-color: blueviolet; */
+    color: grey;
+    cursor: pointer;
+}
+.index-page{
+    color: red;
+    font-size: 2rem;
+}
+input{
+    width: 40%;
+    margin: .5rem;
+    border:2px solid blueviolet;
+    padding: .5rem 0;
+}
+.btn{
+    width: 10%;
+    background-color: turquoise;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.form-header{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(53, 58, 58);
+    padding: .3rem 0;
+    margin-bottom: 2rem;
+}
+.alluser-header{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(53, 58, 58);
+    padding: .3rem 0;
+    margin-bottom: 2rem;  
+}
+.box{
+    border: 2px solid grey;
+    box-shadow: 0 px 0px 10px grey;
+    margin: 1rem auto;
+    width: 30%;
+    text-align: center;
+    padding: .5rem 0;
+}
+.single-user{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(53, 58, 58);
+    padding: .3rem 0;
+    margin-bottom: 2rem;    
+}
+.update-user{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(53, 58, 58);
+    padding: .3rem 0;
+    margin-bottom: 2rem;   
+}
+.delete{
+    display: flex;
+    justify-content: space-between;
+}
