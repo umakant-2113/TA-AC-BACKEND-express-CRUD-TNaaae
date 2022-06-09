@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/user/<%=user._id %>/update" method="POST">
+        <input  name="name"  value="<%=user.name%>"  type="text" placeholder="Enter Name ">
+        <input name="email"  value="<%= user.email %>"  type="text" placeholder="Enter Email">
+        <input name="age"  value="<%= user.age%>"  type="text" placeholder="Enter Age">
+        <textarea name="bio" id="" cols="30" rows="10"><%= user.bio%></textarea>
+        <input type="submit" value="Add">
+      
+    </form>
+</body>
+</html>
