@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <h1 class="form-header">Fill The use data using form element</h1>
+    </header>
+    <form action="/user/new" method="POST">
+        <input name="name" type="text" placeholder="enter name">
+        <input name="email" type="text" placeholder="enter email"> 
+        <input name="age" type="text" placeholder="enter age">
+        <textarea name="bio" id="" cols="60" rows="10" placeholder="enter bio"></textarea>
+        <input type="submit" value="Add">
+    </form>
+</body>
+</html>
