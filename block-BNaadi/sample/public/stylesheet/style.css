@@ -1,0 +1,146 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* custome style */
+body{
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+input{
+    width: 26%;
+    margin: 1rem;
+    padding: .5rem;
+    /* border: 2px solid blueviolet; */
+    outline-color: coral;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+textarea{
+    outline-color: coral; 
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;  
+}
+.form-header{
+    text-align: center;
+    text-transform: capitalize;
+    padding: .53rem;
+    font-size: 2rem;
+    background-color: coral;
+    color: white;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+form{
+    text-align: center;
+    border: 2px solid red;
+    width: 90%;
+    margin: 1rem auto;
+}
+.all-data{
+    text-align: center;
+    text-transform: capitalize;
+    padding: .53rem;
+    font-size: 2rem;
+    background-color: coral;
+    color: white;
+    margin-bottom: 3rem;
+    font-weight: 600;  
+}
+.box{
+    margin: 1rem auto;
+    width: 40%;
+    border: 2px solid grey;
+    padding: .5rem;
+}
+.name{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: blueviolet;
+    margin: .3rem 0;
+}
+.email{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: grey;
+    margin: .2rem 0;
+}
+.edit{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    background-color: blueviolet;
+    color: white;
+    padding: .2rem 1rem;
+}
+.single-user{
+    text-align: center;
+    text-transform: capitalize;
+    padding: .53rem;
+    font-size: 2rem;
+    background-color: rgb(78, 64, 64);
+    color: white;
+    margin-bottom: 3rem;
+    font-weight: 600;    
+}
+.single-box{
+margin: 0 auto;
+width: 40%;
+border: 2px solid coral;
+padding: .5rem ;
+}
+.seprate{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+.bg-box{
+    width: 60%;
+    margin: 0 auto;
+
+}
