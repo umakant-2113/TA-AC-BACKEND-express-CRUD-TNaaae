@@ -49,16 +49,11 @@ router.post('/:id/edit',(req,res,next)=>{
 
 router.get("/:id/delete",(req,res,next)=>{
     let id=req.params.id;
+
     User.findByIdAndDelete(id,(err,user)=>{
         res.redirect("/user/list")
+
     })
 })
-
-
-
-
-
-
-
 
 module.exports=router;
