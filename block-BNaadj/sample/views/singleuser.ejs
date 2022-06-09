@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheet/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+        <h1><%= user.name%></h1>
+        <p> <%= user.email%></p>
+        <p><%= user.age%> </p>
+        <p><%= user.address%> </p>
+        <p><%= user.bio%> </p>
+        <p><%= user.hobbies%> </p>
+        <div class="box">
+            <a class="edit" href="/user/<%=user.id%>/edit">Edit</a>
+            <a class="delete" href="/user/<%=user.id%>/delete">Delete</a>
+            <a class="back" href="/user/list">Back</a>
+        </div>
+    </main>
+    
+</body>
+</html>
